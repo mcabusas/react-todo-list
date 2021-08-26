@@ -1,0 +1,205 @@
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: grey;
+}
+
+body {
+  background: linear-gradient(to bottom right, #33ccff 0%, #ff99cc 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.mainContainer {
+  background-color: white;
+  width: 80%;
+  height: 700px;
+  padding-top: 90px;
+  padding-left: 70px;
+  padding-bottom: 50px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 30px;
+  box-shadow: 0px 4px 40px #8ca4d8;
+  overflow: hidden;
+}
+
+#header {
+  display: flex;
+}
+.subHeaders {
+  margin-top: 50px;
+  margin-bottom: 25px;
+  display: inline-block;
+}
+.subHeaders > h6 {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#addTaskBtn {
+  background-color: #884cb2;
+  display: flex;
+  margin-left: 25px;
+}
+
+#addNoteBtn {
+  background-color: #4c86a8;
+  padding-top: 10px;
+}
+.moreMenuBtn {
+  color: seagreen;
+  cursor: pointer;
+}
+#addIcon {
+  color: white;
+  margin: auto;
+}
+#addTaskBtn p {
+  color: white;
+  margin: 0 auto;
+}
+.todoTask {
+  display: flex;
+}
+div.pendingStatus {
+  background: rgba(242, 153, 74, 0.2);
+  border-radius: 8.5px;
+  font-size: 11px;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  color: #f2994a;
+  display: inline-block;
+}
+div.inProgressStatus {
+  background: rgba(86, 204, 242, 0.2);
+  border-radius: 8.5px;
+  font-size: 11px;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  color: #56ccf2;
+}
+
+div.cancelledStatus {
+  background: rgba(242, 0, 0, 0.39);
+  border-radius: 8.5px;
+  font-size: 11px;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  color: red;
+}
+div.completeStatus {
+  background: rgba(0, 255, 0, 0.27);
+  border-radius: 8.5px;
+  font-size: 11px;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  color: green;
+}
+.urgency {
+  display: flex;
+  margin-top: 0px;
+}
+.urgency > p {
+  margin-left: 5px;
+}
+.urgency > div {
+  width: 10px;
+  height: 10px;
+  margin-top: 8px;
+  border-radius: 50px;
+}
+
+.minorRadio {
+  background-color: green;
+}
+
+.normalRadio {
+  background-color: yellow;
+}
+
+.criticalRadio {
+  background-color: red;
+}
+.reminderNoteTitle {
+  color: white;
+}
+.notesTitle {
+  margin-top: 8px;
+}
+.deleteBtn {
+  cursor: pointer;
+}
+
+.reminders {
+  background-color: rgba(242, 0, 0, 0.39);
+  border-radius: 25px;
+  padding: 10px;
+  box-shadow: 0px 4px 10px #8ca4d8;
+  margin-top: 25px;
+}
+.reminders > h6 {
+  color: white;
+}
+
+.notes {
+  background-color: rgba(72, 39, 246, 0.3);
+  border-radius: 25px;
+  padding: 10px;
+  box-shadow: 0px 4px 10px #8ca4d8;
+  margin-top: 25px;
+}
+
+.notes > h6 {
+  color: white;
+}
+
+#notesAndReminder {
+  height: 500px;
+  overflow-y: scroll;
+}
+
+#pendingDiv {
+  height: 150px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#completedDiv {
+  height: 150px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+select {
+  background-color: transparent;
+  border: 0px;
+  outline: 0px;
+}
